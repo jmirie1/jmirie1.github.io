@@ -216,4 +216,6 @@ justify-center {
     text-align: center; /* centra el texto debajo de cada imagen */
   }
 
-  
+  figcaption {text-align: left;
+    font-family: kosugi
+    ;}
