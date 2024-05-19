@@ -1,49 +1,104 @@
-.kosugi-maru-regular {
-    font-family: "Kosugi Maru", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  body {
-    font-family: Kosugi maru;
-    margin: 0;
-    padding: 20px;
-  }
+/* STYLES CSS */
 
-  .container { 
-display: flex;
-flex-wrap: wrap;
-margin:16px;
-  }
+/* Definir las fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu+Mono:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap'); 
 
-  .active {
-    background-color: #04AA6D;
-  }
+/* Estilos para los encabezados */
+h1 {
+    color: var(--Monochrome-Lighter);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.48px;
+}
 
-  ul {
-    list-style-type: none;
+body {
+    
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li {
-    display: inline;
-  }
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #ffffff;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+.nav-logo {
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+  font-size: 1.25rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #000000;
     text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+   .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+   .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+   .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@media (max-width: 600px) {
+    .nav-logo {
+       text-align: center;
+       margin: 0 auto;
+     }
+   }
