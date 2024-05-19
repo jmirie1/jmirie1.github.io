@@ -2,7 +2,8 @@
 
 /* Definir las fuentes de Google */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu+Mono:ital,wght@0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 
 /* Estilos para los encabezados */
 h1 {
@@ -10,7 +11,37 @@ h1 {
     font-size: 24px;
     font-weight: 700;
     letter-spacing: -0.48px;
+    font-family: "Kosugi maru";
 }
+
+  
+  h2 {
+    font-family: "kosugi maru";
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  h3 {
+    font-family: 'Space Mono', monospace;
+  }
+  
+  h4 {
+    font-family: 'Space Mono', monospace;
+  }
+  
+  h5 {
+    font-family: 'Space Mono', monospace;
+  }
+  
+  h6 {
+    font-family: 'Space Mono', monospace;
+  }
+
+
+
+
+
+
 
 body {
     
@@ -219,3 +250,34 @@ justify-center {
   figcaption {text-align: left;
     font-family: kosugi
     ;}
+
+
+    .about-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 60%;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      
+      .about-image {
+        width: 40%;
+        height: auto;
+        margin-right: 3rem;
+      }
+      
+      .about-text {
+        width: 50%;
+      }
+      
+      .about-text h2 {
+        text-align: left;
+        margin-bottom: 1rem;
+      }
+      
+      .about-text p {
+        text-align: justify;
+       
+      }
