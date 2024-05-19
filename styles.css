@@ -180,6 +180,40 @@ justify-center {
     filter: brightness(120%);
   }
 
-  .container-center {
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+  }
+  
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grid-item img {
+    width: 100%;
+  }
+  
+  .grid-item p {
+    margin-top: 10px;
+  }
+
+  .container {
+    max-width: 800px; /* ajusta el ancho máximo del contenedor */
+    margin: 40px auto; /* agrega un margen de 40px arriba y abajo, y centra horizontalmente */
+    padding: 20px; /* agrega un padding de 20px alrededor del contenido */
+  }
+  
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-} 
+  }
+  
+  .work-item {
+    margin: 20px; /* agrega un margen de 20px alrededor de cada item */
+    text-align: center; /* centra el texto debajo de cada imagen */
+  }
+
+  
