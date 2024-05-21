@@ -43,10 +43,14 @@ h1 {
  
 
 body {
-    
-    margin: 0;
-    padding: 0;
-}
+  font-family: 'kosugi maru';
+  color: var(--Dark-Green-Matcha, #658168);
+  ;background: var(--Milk-coffee, #E3DBBB);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;}
+
 
 a {
   color: #000000;
@@ -58,12 +62,13 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #ffffff;
+    background-color:  var(--light-coffee, #f1ecd9);
+    ;;
     font-family: 'Kosugi Maru', sans-serif;
 }
 
 .nav-logo {
-    color: #000000;
+    color: var(--Dark-Green-Matcha, #658168);;
     text-transform: uppercase;
     letter-spacing: 0.25em;
   font-size: 1.25rem;
@@ -80,7 +85,7 @@ nav {
 }
 
 .nav-links a {
-    color: #000000;
+    color: var(--Dark-Green-Matcha, #658168);
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;

@@ -323,3 +323,21 @@ justify-center {
           grid-column: span 2 / auto;
         }
       }
+
+      body {
+	margin: 0;
+	--color-text: #000;
+	--color-bg: #85827a;
+	--color-link: #594343;
+	--color-link-hover: #000;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	--font-main: Geneva, Tahoma, Verdana, sans-serif;
+	--font-alt: bigmoore, serif;
+	--font-weight-alt: 400;
+	--color-title: inherit;
+	font-family: var(--font-main);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 1;
+}
