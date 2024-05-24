@@ -57,6 +57,22 @@ a {
   text-decoration: none; /* Change this to the desired color */
 } 
 
+a:link {
+  color: var(--Dark-Green-Matcha, #658168);
+}
+
+a:visited {
+  color: var(--Dark-Green-Matcha, #658168);
+}
+
+a:hover {
+  color: var(--Dark-Green-Matcha, #658168);
+}
+
+a:active {
+  color: var(--Light-Green-Matcha, #68cd72);
+}
+
 nav {
     display: flex;
     justify-content: space-around;
