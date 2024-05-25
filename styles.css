@@ -130,7 +130,7 @@ nav {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: #000000;
+    background-color: var(--Dark-Green-Matcha, #658168);
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -150,7 +150,7 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #ffffff;
+        background-color: var(--Milk-coffee, #E3DBBB);
         display: flex;
         flex-direction: column;
         align-items: center;
