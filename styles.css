@@ -73,6 +73,20 @@ a:active {
   color: var(--Light-Green-Matcha, #68cd72);
 }
 
+html {
+  cursor: url(img/Cursor_AY-08.png), auto !important;
+}
+a {
+  cursor: url(img/Cursores_AY-13.png), auto !important;
+}
+
+.grab {
+  cursor: url(img/Cursores_AY-13.png), auto !important;
+}
+.grabbing {
+  cursor: url(img/Cursores_AY-15.png), auto !important;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
