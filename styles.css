@@ -150,7 +150,7 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: var(--Milk-coffee, #E3DBBB);
+        background-color:  var(--Milk-coffee, #E3DBBB);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -358,3 +358,43 @@ justify-center {
           grid-column: span 2 / auto;
         }
       }
+
+      .container-float {
+        /* Set a consistent box model */
+        box-sizing: border-box;
+      
+        /* Define the height and layout */
+        height: 50vh;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 10px;
+      
+        /* Center the content horizontally and vertically */
+        place-items: center;
+      
+        /* Add the floating animation */
+        animation: floating 3s linear infinite;
+      }
+      
+     
+
+.container-float {
+  
+ img {
+    height: 50%;
+    cursor: pointer;
+  }
+}
+
+.container-float a {
+  margin: 10px; /* add 20px gap between each image link */
+  display: inline-block; /* make anchors inline-block to respect margin */
+}
+
+@keyframes floating
+{
+  0% {transform: translateY(0)} 
+  50% {transform: translateY(15px)} 
+  100% {transform: translateY(0)} 
+}
+   
