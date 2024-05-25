@@ -368,7 +368,7 @@ justify-center {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         grid-gap: 10px;
-      
+     
         /* Center the content horizontally and vertically */
         place-items: center;
       
@@ -387,7 +387,7 @@ justify-center {
 }
 
 .container-float a {
-  margin: 10px; /* add 20px gap between each image link */
+  margin: 70px; /* add 20px gap between each image link */
   display: inline-block; /* make anchors inline-block to respect margin */
 }
 
