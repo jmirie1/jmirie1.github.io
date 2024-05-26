@@ -560,6 +560,10 @@ justify-center {
   .arrow-left, .arrow-right {
     display: none;
   }
+}@media (max-width: 768px) {
+  .arrow {
+    display: none;
+  }
 }
 
   .thumbnail-container {
