@@ -561,3 +561,9 @@ justify-center {
   margin: 20px 0;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .arrow-prev, .arrow-next {
+    display: none;
+  }
+}
