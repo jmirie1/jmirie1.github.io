@@ -619,15 +619,18 @@ justify-center {
 
 
 
-.container-works {display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
- padding-left: 40px;
-margin-left: 210px;
-margin-right:70px ;
-margin-top:40px;
-justify-content: center;
-}
+    @media only screen and (min-width: 1024px) {
+      .container-works {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        padding-left: 40px;
+        margin-left: 210px;
+        margin-right: 70px;
+        margin-top: 40px;
+        justify-content: center;
+      }
+    }
 
 .text-works {  
   padding: 20px;
@@ -656,30 +659,49 @@ justify-content: center;
     margin-top: 5px
   } 
 
-  
-  /* Media queries for responsiveness */
-  @media only screen and (max-width: 768px) {
-    /* Tablet styles */
-   .works-container {
-      padding: 10px;
-    }
-   .main-image {
-      height: 200px; /* adjust this value to your desired height */
-    }
-   .thumbnail {
-      width: 30%; /* adjust this value to your desired width */
-    }
-  }
+ /* hasta aqui*/
 
-  @media only screen and (max-width: 480px) {
-    /* Smartphone styles */
-   .works-container {
-      padding: 5px;
-    }
-   .main-image {
-      height: 150px; /* adjust this value to your desired height */
-    }
-   .thumbnail {
-      width: 40%; /* adjust this value to your desired width */
-    }
+ @media (max-width: 1024px) {
+  .container-works {
+    grid-template-columns: 1fr;
   }
+  .text-works {
+    padding: 10px;
+  }
+}
+
+/* Breakpoint para celulares */
+@media (max-width: 768px) {
+  .container-works {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra el contenedor de texto y el slider verticalmente */
+    margin-top: 20px; /* agrega un margen superior de 20px */
+  }
+  .text-works {
+    padding: 10px;
+    width: 80%; /* ancho fijo para el contenedor de texto */
+    margin: 0 auto; /* centra el contenedor de texto horizontalmente */
+    order: 2; /* cambia el orden del texto para que esté debajo del slider */
+  }
+  .slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra el slider verticalmente */
+    order: 1; /* cambia el orden del slider para que esté arriba del texto */
+  }
+  .main-image {
+    width: 90%;
+    height: auto; /* conserva la proporción de la imagen */
+  }
+  .thumbnail-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .thumbnail {
+    width: 30%; /* ajusta el ancho de las miniaturas */
+    height: 7rem; /* ajusta el alto de las miniaturas */
+    margin-bottom: 10px;
+  }
+}
