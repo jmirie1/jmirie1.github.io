@@ -557,7 +557,7 @@ justify-center {
 }
 
 @media (max-width: 768px) {
-  .arrow-prev, .arrow-next {
+  .arrow-left, .arrow-right {
     display: none;
   }
 }
