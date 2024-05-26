@@ -1,9 +1,6 @@
 /* STYLES CSS */
 
-/* Definir las fuentes de Google */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu+Mono:ital,wght@0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&family=Kosugi+Maru&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
 
 /* Estilos para los encabezados */
 h1 {
@@ -22,7 +19,7 @@ h1 {
   }
   
   h3 {
-    font-family: 'Space Mono', monospace;
+    font-family: "kosugi maru", monospace;
   }
   
   h4 {
@@ -39,8 +36,11 @@ h1 {
 
   .no-underline {
     text-decoration: none;
-  }
- 
+  } 
+ /* p  font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+ */ 
 
 body {
   font-family: 'kosugi maru';
@@ -476,9 +476,9 @@ justify-center {
  
  .slider-container {
   position: relative;
-  width: 500px;
+  width: 450px;
   height: 100%;
-  margin: 50px auto;
+  margin:  0px;
 }
 
 .main-image {
@@ -505,8 +505,8 @@ justify-center {
   transform: translateY(-50%);
   width: 30px;
   height: 30px;
-  background-color:var(--Dark-Green-Matcha, #658168);
-  color: var(--light-coffee, #f1ecd9);
+  background-color:none;
+  color: var(--Dark-Green-Matcha, #658168);
   text-align: center;
   line-height: 30px;
   cursor: pointer;
@@ -515,7 +515,7 @@ justify-center {
 }
 
 .arrow-left {
-  left: -100px;
+  left: -60px;
 }
 
 .arrow-right {
@@ -616,3 +616,70 @@ justify-center {
       display: flex;
       flex-direction: column;
     }}
+
+
+
+.container-works {display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+ padding-left: 40px;
+margin-left: 210px;
+margin-right:70px ;
+margin-top:40px;
+justify-content: center;
+}
+
+.text-works {  
+  padding: 20px;
+}
+
+  .footer {
+    background-color:var(--Milk-coffee, #E3DBBB) ;/* color de fondo del footer */
+    height: 100px; /* altura del footer */
+    width: 100%; /* ancho del footer */
+  }
+
+  .text-works h6 {
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 5px
+  }
+
+  .text-works h3 {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .text-works p {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 5px
+  } 
+
+  
+  /* Media queries for responsiveness */
+  @media only screen and (max-width: 768px) {
+    /* Tablet styles */
+   .works-container {
+      padding: 10px;
+    }
+   .main-image {
+      height: 200px; /* adjust this value to your desired height */
+    }
+   .thumbnail {
+      width: 30%; /* adjust this value to your desired width */
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    /* Smartphone styles */
+   .works-container {
+      padding: 5px;
+    }
+   .main-image {
+      height: 150px; /* adjust this value to your desired height */
+    }
+   .thumbnail {
+      width: 40%; /* adjust this value to your desired width */
+    }
+  }
