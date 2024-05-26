@@ -670,6 +670,18 @@ justify-center {
   }
 }
 
+/* Estilos para el menú de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000; /* aumenta el z-index del menú de navegación */
+}
+
 /* Breakpoint para celulares */
 @media (max-width: 768px) {
   .container-works {
