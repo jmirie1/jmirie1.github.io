@@ -45,7 +45,7 @@ h1 {
 body {
   font-family: 'kosugi maru';
   color: var(--Dark-Green-Matcha, #658168);
-  ;background: var(--Milk-coffee, #E3DBBB);
+  ;background: var(--light-coffee, #f1ecd9);
   padding: 0;
   margin: 0;
   display: flex;
@@ -637,7 +637,7 @@ justify-center {
 }
 
   .footer {
-    background-color:var(--Milk-coffee, #E3DBBB) ;/* color de fondo del footer */
+    background-color:var(--light-coffee, #f1ecd9) ;/* color de fondo del footer */
     height: 100px; /* altura del footer */
     width: 100%; /* ancho del footer */
   }
