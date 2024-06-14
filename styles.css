@@ -717,3 +717,40 @@ justify-center {
     margin-bottom: 10px;
   }
 }
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Asegúrate de que el ancho del navbar sea del 100% */
+  padding: 10px; /* Ajusta el padding según sea necesario */
+  margin: 0 auto; /* Centra el navbar horizontalmente */
+  background-color: var(--light-coffee, #f1ecd9); /* Color de fondo del navbar */
+  box-sizing: border-box; /* Asegúrate de que el ancho y el alto se calculen correctamente */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%; /* Ajusta el ancho de los enlaces del navbar */
+  margin: 0 auto; /* Centra los enlaces horizontalmente */
+}
+
+.nav-logo {
+  margin: 0 20px; /* Ajusta el margen del logo del navbar */
+}
+
+.burger {
+  display: none; /* Oculta el botón de menú en pantallas grandes */
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    width: 60%; /* Ajusta el ancho de los enlaces del navbar en pantallas pequeñas */
+  }
+  .burger {
+    display: block; /* Muestra el botón de menú en pantallas pequeñas */
+  }
+}

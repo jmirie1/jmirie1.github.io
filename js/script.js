@@ -5,6 +5,3 @@ $gallery.masonry({
   gutter: 20 // adjust the gap between columns
 });
 
-
-
-
