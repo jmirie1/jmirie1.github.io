@@ -88,65 +88,92 @@ a {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 8vh;
-  background-color: var(--light-coffee, #f1ecd9);
-  font-family: 'Kosugi Maru', sans-serif;
-  max-width: 1200px; /* ancho máximo para la navbar */
-  margin: 0 auto; /* centrar la navbar */
-  padding: 0 20px; /* agregar padding para que no se pegue al margen */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color:  var(--light-coffee, #f1ecd9);
+    ;;
+    font-family: 'Kosugi Maru', sans-serif;
 }
 
 .nav-logo {
-  color: var(--Dark-Green-Matcha, #658168);
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
+    color: var(--Dark-Green-Matcha, #658168);;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
   font-size: 1.25rem;
-  margin-right: 20px; /* added margin to separate logo from links */
 }
 
 .nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
 }
 
 .nav-links li {
-  list-style: none;
-  margin-right: 20px; /* added margin to separate links */
+    list-style: none;
 }
 
 .nav-links a {
-  color: var(--Dark-Green-Matcha, #658168);
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 14px;
-  text-align: left; /* agregar esta propiedad para alinear los textos a la izquierda */
+    color: var(--Dark-Green-Matcha, #658168);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--Dark-Green-Matcha, #658168);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+   .nav-links {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-.nav-links {
-    flex-direction: column;
-    align-items: left;
-  }
-.nav-links li {
-    margin-right: 0;
-    margin-bottom: 10px; /* agregar espacio entre los enlaces */
-  }
-.nav-links a {
-    font-size: 16px;
-  }
+    body {
+        overflow-x: hidden;
+    }
+   .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color:  var(--light-coffee, #f1ecd9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+   .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
 }
 
 @media (max-width: 600px) {
-.nav-logo {
-    text-align: center;
-    margin: 0 auto;
-  }
-}
+    .nav-logo {
+       text-align: center;
+       margin: 0 auto;
+     }
+   }
+
 
 
    .fluid-container {
