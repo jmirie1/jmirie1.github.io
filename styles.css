@@ -150,7 +150,7 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color:  var(--Milk-coffee, #E3DBBB);
+        background-color:  var(--light-coffee, #f1ecd9);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -661,96 +661,4 @@ justify-center {
 
  /* hasta aqui*/
 
- @media (max-width: 1024px) {
-  .container-works {
-    grid-template-columns: 1fr;
-  }
-  .text-works {
-    padding: 10px;
-  }
-}
-
-/* Estilos para el menú de navegación */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1000; /* aumenta el z-index del menú de navegación */
-}
-
-/* Breakpoint para celulares */
-@media (max-width: 768px) {
-  .container-works {
-    grid-template-columns: 1fr;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* centra el contenedor de texto y el slider verticalmente */
-    margin-top: 20px; /* agrega un margen superior de 20px */
-  }
-  .text-works {
-    padding: 10px;
-    width: 80%; /* ancho fijo para el contenedor de texto */
-    margin: 0 auto; /* centra el contenedor de texto horizontalmente */
-    order: 2; /* cambia el orden del texto para que esté debajo del slider */
-  }
-  .slider-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* centra el slider verticalmente */
-    order: 1; /* cambia el orden del slider para que esté arriba del texto */
-  }
-  .main-image {
-    width: 90%;
-    height: auto; /* conserva la proporción de la imagen */
-  }
-  .thumbnail-container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .thumbnail {
-    width: 30%; /* ajusta el ancho de las miniaturas */
-    height: 7rem; /* ajusta el alto de las miniaturas */
-    margin-bottom: 10px;
-  }
-}
-
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%; /* Asegúrate de que el ancho del navbar sea del 100% */
-  padding: 10px; /* Ajusta el padding según sea necesario */
-  margin: 0 auto; /* Centra el navbar horizontalmente */
-  background-color: var(--light-coffee, #f1ecd9); /* Color de fondo del navbar */
-  box-sizing: border-box; /* Asegúrate de que el ancho y el alto se calculen correctamente */
-}
-
-.nav-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 45%; /* Ajusta el ancho de los enlaces del navbar */
-  margin: 0 auto; /* Centra los enlaces horizontalmente */
-}
-
-.nav-logo {
-  margin: 0 20px; /* Ajusta el margen del logo del navbar */
-}
-
-.burger {
-  display: none; /* Oculta el botón de menú en pantallas grandes */
-}
-
-@media screen and (max-width: 768px) {
-  .nav-links {
-    width: 60%; /* Ajusta el ancho de los enlaces del navbar en pantallas pequeñas */
-  }
-  .burger {
-    display: block; /* Muestra el botón de menú en pantallas pequeñas */
-  }
-}
+ 
