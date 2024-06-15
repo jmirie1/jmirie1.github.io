@@ -61,8 +61,8 @@ body {
     font-family: 'Montserrat';
     color: #000000;
     ;background:  #ffffff;
-    margin: 0 50px;
-    padding: 0 50px;
+    margin: 0 10px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;}
   
