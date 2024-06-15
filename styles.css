@@ -87,6 +87,7 @@ a {
   cursor: url(img/Cursores_AY-15.png), auto !important;
 }
 
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -147,6 +148,10 @@ nav {
     margin: 0 auto;
   }
 }
+
+
+
+
 
 
    .fluid-container {
@@ -478,7 +483,7 @@ justify-center {
   .container-gallery {
     display: grid;
     grid-template-columns: 1fr;
-     margin-right: 70px;
+     margin-right: 10px;
     margin-top: 40px;
     justify-content: center;
   }
