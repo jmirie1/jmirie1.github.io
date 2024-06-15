@@ -603,7 +603,7 @@ justify-center {
   .thumbnail-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    
   }
   .thumbnail {
     width: 30%; /* ancho del thumbnail */
