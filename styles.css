@@ -271,6 +271,34 @@ justify-center {
     font-family: kosugi
     ;}
 
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .work-grid-item {
+        width: 50%;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+      .work-grid-item {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .work-grid-item {
+        width: 33.33%;
+      }
+    }
+
+
 /* Estilos para computadoras y tablets */
 .about-container {
   display: flex;
