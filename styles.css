@@ -423,7 +423,7 @@ justify-center {
 @media (min-width: 601px) and (max-width: 768px) {
   .container-gallery {
      max-width: 100%; /* adjust the maximum width of the container */
-     margin: 0; /* remove the margin */
+     margin: 10px; /* remove the margin */
      padding: 0; /* remove the padding */
    }
  
@@ -436,7 +436,7 @@ justify-center {
  @media (max-width: 600px) {
   .container-gallery {
      max-width: 100%; /* adjust the maximum width of the container */
-     margin: 0; /* remove the margin */
+     margin: 10px; /* remove the margin */
      padding: 0; /* remove the padding */
    }
  
