@@ -13,37 +13,35 @@ h1 {
 
   
   h2 {
-    font-family: "kosugi maru";
+    font-family: 'Kosugi maru';
     font-weight: 400;
     font-style: normal;
+    font-weight: 700;
+    
   }
   
   h3 {
-    font-family: "kosugi maru", monospace;
+    font-family:'MuseoSans_500';
   }
   
   h4 {
-    font-family: 'Space Mono', monospace;
+    font-family: 'MuseoSans_500';
   }
   
   h5 {
-    font-family: 'Space Mono', monospace;
+  font-family: 'MuseoSans_500';
   }
   
   h6 {
-    font-family: 'Space Mono', monospace;
+    font-family:'MuseoSans_500';
   }
 
   .no-underline {
     text-decoration: none;
   } 
- /* p  font-family: "M PLUS Rounded 1c", sans-serif;
-    font-weight: 400;
-    font-style: normal;
- */ 
 
 body {
-  font-family: 'kosugi maru';
+  font-family: 'MuseoSans_500';
   color: var(--Dark-Green-Matcha, #658168);
   ;background: var(--light-coffee, #f1ecd9);
   padding: 0;
